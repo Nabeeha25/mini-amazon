@@ -1,0 +1,71 @@
+<html>
+        <body><!DOCTYPE html>
+<html>
+    <head>
+        <title> Sign up </title>
+    </head> 
+    <body>
+   <header> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1200px-Amazon_logo.svg.png" height="50px" width="100px" id="logo">
+    <input type="text" value="search" id="searchbar"> </header>
+    <nav>
+          <li> <a href="index.html">Home</a></li>
+     <li> <a href="Webpage best sellers.html"> Best sellers </a>  </li>
+     <li> <a href="Webpage today's deals.html">  Today's deals </a> </li>
+     <li> Sign-up </li>
+    </nav> <br>
+    <body>
+    <form onsubmit="checkPassword()">
+     Username: <input type="text" required> <br><br>
+     Date of birth: <input type="date"> <br><br>
+     Email: <input type="email" required> <br><br>
+     Password: <input type="password" required id="password1"> <br><br>
+     Confirm password: <input type="password" required id= "password2"> <br> <br>
+     Address: <input type="text" required> <br><br>
+     <input type ="submit" value="submit">
+     
+     </form>
+
+    </body>
+        <style>body{
+     background-image: URL("");
+}
+#logo{
+    display: inline-block;
+    vertical-align: middle;
+    background-color: white;
+    padding: 5px;
+}
+#searchbar{
+    margin-left:20px;
+}
+header{
+    background-color: black;
+    padding: 20px;
+}
+li{
+    display: inline;
+    background-color: navy;
+    color: white;
+    margin-left: 5px;
+}
+nav{
+    background-color: navy;
+    padding: 5px;
+}
+a{
+    color:white;
+}
+form{
+    text-align: center;
+}</style>
+        <script>function checkPassword() {
+                password1 =document.getElementById("password1").value;
+                password2 = document.getElementById("password2").value
+if(password1 != password2) {
+alert ("Password did not match please try again");
+}
+else{
+alert ("Password matched");
+}
+}</script>
+      </html>
